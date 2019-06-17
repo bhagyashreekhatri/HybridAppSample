@@ -3,6 +3,7 @@ import 'package:sample_modules_app/ListView/ListViewPage.dart';
 import 'package:sample_modules_app/TabBar/TabBarPage.dart';
 import 'package:sample_modules_app/Alerts/AlertPage.dart';
 import 'package:sample_modules_app/GoogleMap/GoogleMapPage.dart';
+import 'package:sample_modules_app/fancyBottomNaviagtionBar/BottomNavigationBar.dart';
 
 class SideDrawerPage extends StatelessWidget {
   final String title;
@@ -47,6 +48,15 @@ class SideDrawerPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => AlertPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Bottom Navigation Bar'),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FancyBottomNavigationBar()),
                 );
               },
             ),
